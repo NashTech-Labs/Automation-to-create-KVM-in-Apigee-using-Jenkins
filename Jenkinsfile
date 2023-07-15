@@ -77,6 +77,7 @@ properties([
     ])
 ])
 
+def selectedEnvs = params.ENVIRONMENT.split(',')
 def selectedKvms = params.KVM_FILE_NAME.split(',')
 
 pipeline {
